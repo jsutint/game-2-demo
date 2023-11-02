@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi'><link rel='stylesheet' href='https://naver.github.io/egjs-view360/v3/common/css/demo.css'>
+<link rel='stylesheet' href='https://naver.github.io/egjs-view360/v3/common/css/PanoControls.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>RMIT Chemistry Lab</h1>
+    <div class="icon">
+        <div class="earth">
+            <div class="place place1"></div>
+            <div class="place place2"></div>
+            <div class="place place3"></div>
+            <div class="place place4"></div>
+            <div class="anchor anchor1"></div>
+            <div class="anchor anchor2"></div>
+            <div class="anchor anchor3"></div>
+            <div class="anchor anchor4"></div>
+        </div>
+    </div>
+</header>
+<div class="viewer" data-page="1">
+    <div class="container"></div>
+    <div class="layer" onclick="closeLayer(event);">
+        <img src="https://naver.github.io/egjs-view360/v3/examples/panoviewer/etc/img/book1.jpg">
+    </div>
+
+    <div class="hotspot search" data-page="1" data-anchor-index="0" data-yaw="4" data-pitch="-10" onclick="openLayer('3.jpg')"></div>
+    <div class="hotspot search" data-page="1" data-anchor-index="1" data-yaw="161" data-pitch="-15" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot link" data-page="1" data-anchor-index="2" data-yaw="-35" data-pitch="-8" onclick="load(this, 2)">
+        Move
+    </div>
+
+    <div class="hotspot search" data-page="2" data-anchor-index="0" data-yaw="-63" data-pitch="-13" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="1" data-yaw="0" data-pitch="-3" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="2" data-yaw="42" data-pitch="-3" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="3" data-yaw="75" data-pitch="-1" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="4" data-yaw="188" data-pitch="-3" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="5" data-yaw="214" data-pitch="-6" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="6" data-yaw="234" data-pitch="14" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="7" data-yaw="233" data-pitch="-5" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot search" data-page="2" data-anchor-index="8" data-yaw="239" data-pitch="-5" onclick="openLayer('book4.jpg')"></div>
+    <div class="hotspot link" data-page="2" data-anchor-index="9" data-yaw="-110" data-pitch="-6" onclick="load(this, 3)">
+        Move
+    </div>
+    <div class="hotspot link" data-page="2" data-anchor-index="10" data-yaw="-30" data-pitch="-6" onclick="load(this, 1)">
+        Move
+    </div>
+
+    <div class="hotspot search" data-page="3" data-anchor-index="0" data-yaw="-2" data-pitch="-30" onclick="openLayer('3.jpg')"></div>
+    <div class="hotspot search" data-page="3" data-anchor-index="1" data-yaw="21" data-pitch="-10" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot link" data-page="3" data-anchor-index="2" data-yaw="-48" data-pitch="-6" onclick="load(this, 4)">
+        Move
+    </div>
+    <div class="hotspot link" data-page="3" data-anchor-index="3" data-yaw="145" data-pitch="-7" onclick="load(this, 2)">
+        Move
+    </div>
+
+    <div class="hotspot search" data-page="4" data-anchor-index="0" data-yaw="15" data-pitch="-20" onclick="openLayer('3.jpg')"></div>
+    <div class="hotspot search" data-page="4" data-anchor-index="1" data-yaw="48" data-pitch="-7" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="4" data-anchor-index="2" data-yaw="111" data-pitch="-6" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="4" data-anchor-index="3" data-yaw="131" data-pitch="-12" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot link" data-page="4" data-anchor-index="4" data-yaw="160" data-pitch="-4" onclick="load(this, 3)">
+        Move
+    </div>
+    <div class="hotspot link" data-page="4" data-anchor-index="5" data-yaw="-20" data-pitch="-9" onclick="load(this, 6)">
+        Move
+    </div>
+    <div class="hotspot link" data-page="4" data-anchor-index="6" data-yaw="-115" data-pitch="-10" onclick="load(this, 5)">
+        Move
+    </div>
+
+    <div class="hotspot link" data-page="5" data-anchor-index="0" data-yaw="103" data-pitch="-10" onclick="load(this, 4)">
+        Move
+    </div>
+
+    <div class="hotspot search" data-page="6" data-anchor-index="0" data-yaw="-1" data-pitch="-16" onclick="openLayer('3.jpg')"></div>
+    <div class="hotspot search" data-page="6" data-anchor-index="1" data-yaw="63" data-pitch="-10" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="6" data-anchor-index="2" data-yaw="53" data-pitch="18" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="6" data-anchor-index="3" data-yaw="68" data-pitch="-6" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="6" data-anchor-index="4" data-yaw="65" data-pitch="3" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot link" data-page="6" data-anchor-index="5" data-yaw="36" data-pitch="-10" onclick="load(this, 4)">
+        Move
+    </div>
+    <div class="hotspot link" data-page="6" data-anchor-index="6" data-yaw="-52" data-pitch="-10" onclick="load(this, 7)">
+        Move
+    </div>
+
+    <div class="hotspot search" data-page="7" data-anchor-index="0" data-yaw="5" data-pitch="-3" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="7" data-anchor-index="1" data-yaw="-52" data-pitch="-6" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot search" data-page="7" data-anchor-index="2" data-yaw="135" data-pitch="-9" onclick="openLayer('book2.jpg')"></div>
+    <div class="hotspot link" data-page="7" data-anchor-index="3" data-yaw="-140" data-pitch="-11" onclick="load(this, 6)">
+        Move
+    </div>
+  <script src='https://naver.github.io/egjs-view360/v3/common/js/jquery-2.2.4.js'></script>
+<script src='https://naver.github.io/egjs-view360/v3/common/js/screenfull.min.js'></script>
+<script src='https://naver.github.io/egjs-view360/v3/common/js/PieView.js'></script>
+<script src='https://naver.github.io/egjs-view360/release/latest/dist/view360.pkgd.js'></script>
+<script src='https://naver.github.io/egjs-view360/v3/common/js/PanoControls.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/sweetalert2@9.7.2/dist/sweetalert2.all.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.min.js'></script>
+<script src='https://naver.github.io/egjs-view360/v3/common/js/initXR.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
